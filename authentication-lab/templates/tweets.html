@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	{%for i in tweets%}
+		<div>
+			<div>
+				<h4>by {{users[tweets[i]['uid']]['username']}}</h4>
+				<h1>{{tweets[i]['title']}}</h1>
+			</div>
+			<h3>{{tweets[i]['text']}}</h3>
+		</div>
+	{%endfor%}
+
+	<a href="/tweets"><button>Make a new tweet</button></a>
+	<a href="/signout"><button>signout</button></a>
+</body>
+</html>

@@ -5,7 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-    Great Job!
     <a href="/signout"><button>sign out</button></a>
+    <h2>Create New Tweet</h2>
+    <form action='/add_tweet' method='POST'>
+        <div>
+            <label>Title</label>
+            <div>
+                <input type="text" name="title">
+            </div>
+        </div>
+        <div>
+            <label>Text</label>
+            <div>
+                <input type="text" name="text" maxlength="280">
+            </div>
+        </div>
+        <div>
+            <input type="submit"/>
+        </div>
+    </form>
+    <a href="/all_tweets"><button>to tweets</button></a>
 </body>
 </html>
